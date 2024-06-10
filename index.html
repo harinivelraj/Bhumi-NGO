@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhumi NGO</title>
+  
+  <!-- Google Analytics Tracking Code -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EYLWXQR4WW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-EYLWXQR4WW');
+  </script>
+</head>
+<body>
+  <h1>Welcome to Bhumi NGO</h1>
+  <p>Empowering communities through education and volunteerism.</p>
+  
+  <!-- Volunteer Now Button -->
+  <button id="volunteerButton">Volunteer Now</button>
+
+  <script>
+    document.getElementById('volunteerButton').addEventListener('click', function() {
+      // Track Button Click Event
+      gtag('event', 'click', {
+        'event_category': 'Button Click',
+        'event_label': 'Volunteer Button'
+      });
+
+      // Navigate to Form Page
+      window.location.href = 'form.html';
+    });
+  </script>
+</body>
+</html>
